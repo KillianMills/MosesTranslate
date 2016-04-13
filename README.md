@@ -7,6 +7,6 @@ to allow a remote access to Moses-based SMT system, so you can avail of this to
 build up a simple website which can accept user’s input and return the translation
 
 Authors:
-Killian Mills
-Sean Gibbons
+Killian Mills,
+Sean Gibbons,
 Mark McCluskey
