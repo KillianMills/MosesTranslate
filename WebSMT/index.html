@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Moses Translate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/SMTStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/StickyFooter.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascript/translate.js"></script>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">SMT</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-max text-left"> 
+      <h2 style="color:#ecf0f1" id="mosesTranslate">Moses Translate</h2>
+	  <form action="action_page.php">
+		<select name="source" id="translateMenu">
+		  <option value="english">English : French</option>
+		  <option value="french">French : English</option>
+		  <option value="spanish">Spanish</option>
+		 <option value="russian">Russian</option>
+		</select>
+		<br><br>
+	  </form>
+      <div class="row">
+        <div class="col-sm-4">
+          <textarea rows="10" cols="50" id ="source"></textarea>
+        </div>
+        <div class="col-sm-4"> 
+          <textarea rows="10" cols="50" id ="result"></textarea>
+        </div>
+      </div>
+      <input type="button" value="Translate" id="translateButton" onclick="translateText();">
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Killian Mills, Mark McCluskey, Sean Gibbons</p>
+</footer>
+
+</body>
+</html>

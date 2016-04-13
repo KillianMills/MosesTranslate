@@ -1,0 +1,87 @@
+body{
+	background-image: url(images/mountainBackground.jpg);
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#header {
+    background-color:#34495e;
+    color:#ecf0f1;
+    text-align:center;
+    padding:5px;
+}
+
+#translation{
+	display: inline;
+	position: absolute;
+	top: 50%;
+	margin-top: -200px;/* half of #content height*/
+	left: 0;
+	width: 100%;
+}
+
+#source{
+	padding: 20px;
+    margin: 0 10%;
+	background-color: rgba(105,100,100,0.8);/* transparent*/
+}
+
+#result{
+	padding: 20px;
+    margin: 0 10%;
+	background-color: rgba(105,100,100,0.8);/* transparent*/
+}
+
+#nav {
+    line-height:30px;
+    background-color:#34495e;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:#34495e;
+    color:#ecf0f1;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+	height: auto;
+	padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
