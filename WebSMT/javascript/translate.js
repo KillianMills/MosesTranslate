@@ -1,15 +1,18 @@
 function translate()
 {
-    var srcText = document.getElementById("enSrcText").value;
-    var transDir = document.getElementById("transdir").value;
+	// get source, result and translation menu
+    var sourceText = document.getElementById("source").value;
+	var resultText = document.getElementById("result").value;
+	var translateOption = document.getElementById("translateMenu").value;
+	var translateButton = document.getElementById("translateButton").value;
 
-    document.getElementById("trgText").value = "";
+    document.getElementById("result").value = "";
+    sorceText = sourceText.trim();
 
-    srcText = srcText.trim();
-
-    if (srcText.length == 0)
+    if (sorceText.length == 0){
         return;
-
+	}
+	
     xhr = newHttp();
     if (xhr == null)
     {
@@ -17,10 +20,10 @@ function translate()
         return;
     }
 
-    var params = "srcText=" + escape(srcText) + "&transDir=" + transDir;
+    var params = "sorceText=" + escape(sourceText) + "&translateMenu=" + translateMenu;
 
-    document.getElementById("subTrans").disabled = true;
-    document.getElementById("wait").style.display = "";
+    document.getElementById("translateButton").disabled = true;
+    //document.getElementById("wait").style.display = "";
 
     xhr.open("POST", "DemoWatt/webtranslate.cgi", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
