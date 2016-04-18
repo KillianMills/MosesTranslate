@@ -57,7 +57,7 @@ function handleNewText()
     if (xhr.responseText != null && xhr.responseText.trim() == "ERROR") {
       alert('An error occurred. Sorry.');
       document.getElementById("subTrans").disabled = false;
-      document.getElementById("wait").style.display = "none";
+      //document.getElementById("wait").style.display = "none";
       return;
     }
 
